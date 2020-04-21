@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".DetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/book_Image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/toy_story"
+        />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_Image"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="4.5"
+    />
+    <TextView
+        android:id="@+id/rate_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginLeft="30dp"
+        android:text="Average: 4.67/Number of ratings: 100"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_detail"
+        android:text="TOY STORY 4"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/writter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_name"
+        android:text="By: Andrew Stanton , Joss Whedon , Joel Cohen , Alec Sokolow"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/writter"
+        android:text="Release Date:  2010-04-10"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/release_date"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="75dp"
+        android:text="Translate"
+        android:background="@drawable/border"
+
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+
+</RelativeLayout>

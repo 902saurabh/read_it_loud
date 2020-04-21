@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="80dp"
+    android:paddingRight="30dp"
+    android:background="@android:color/black"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:id="@+id/sign_name"
+        android:hint="Name"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/sign_email"
+        android:hint="Email"
+        android:textColorHint="@android:color/white"
+
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/sign_password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white"
+
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <EditText
+        android:id="@+id/confirm_sign_password"
+        android:hint="confirmPassword"
+        android:inputType="textVisiblePassword"
+        android:textColorHint="@android:color/white"
+
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <Button
+
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/logoRed"
+        android:textColor="@android:color/white"
+        android:text="Register"
+        android:layout_margin="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Login"
+        android:gravity="center"
+        android:background="@color/buttons"
+        android:layout_margin="20dp"
+        />
+
+
+
+
+</LinearLayout>
+
